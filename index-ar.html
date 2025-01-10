@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT.CEYSIA PFP | الصفحة الرئيسية</title>
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e90ff, #00bcd4);
+            color: #fff;
+            direction: rtl; /* Arabic text direction */
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        /* Add a logo to the header */
+        header img {
+            width: 150px; /* You can adjust the size here */
+            margin-bottom: 20px;
+        }
+
+        nav {
+            text-align: center;
+            padding: 15px 0;
+            background: #005f73;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            transition: 0.3s ease;
+        }
+        nav a:hover {
+            border: 2px solid #fff;
+            border-radius: 8px;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .carousel {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .carousel img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #005f73;
+            color: #fff;
+            margin-top: 30px;
+        }
+        .language-switcher {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .language-switcher button {
+            background: #fff;
+            color: #005f73;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+        .language-switcher button:hover {
+            background: #005f73;
+            color: #fff;
+        }
+
+        .language-settings-button {
+            background-color: #fff;
+            color: #005f73;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+
+        .language-settings-button:hover {
+            background: #005f73;
+            color: #fff;
+        }
+
+        .language-settings {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            color: #fff;
+            width: 250px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .language-settings button {
+            margin-top: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            nav a {
+                font-size: 1rem;
+                padding: 8px 15px;
+                margin: 0 10px;
+            }
+            .carousel {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 0.9rem;
+            }
+            nav {
+                padding: 10px 0;
+            }
+            nav a {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+            }
+            .language-switcher {
+                margin-top: 15px;
+            }
+            .language-switcher button {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="472114738_2271683849873695_4625702166817465032_n.jpg" alt="شعار PT.CEYSIA" style="width: 150px; margin-bottom: 20px;">
+        <h1 id="title">PT.CEYSIA PFP</h1>
+        <p id="subtitle">أفضل الحلول لاحتياجاتك</p>
+    </header>
+
+    <nav>
+        <a href="about.html" id="about-link">معلومات عنا</a>
+        <a href="products.html" id="products-link">منتجاتنا</a>
+        <a href="contact.html" id="contact-link">اتصل بنا</a>
+    </nav>
+
+    <section>
+        <h2 id="welcome-title">مرحبًا بكم في PT.CEYSIA PFP</h2>
+        <div class="carousel">
+            <div><img src="1.png" alt="الصورة 1"></div>
+            <div><img src="2.png" alt="الصورة 2"></div>
+            <div><img src="3.jpg" alt="الصورة 3"></div>
+        </div>
+        <p id="welcome-text">نحن ملتزمون بتقديم منتجات طبيعية عالية الجودة من الأراضي الخصبة في إندونيسيا إلى العالم.</p>
+    </section>
+
+    <div class="language-switcher">
+        <p><strong>تغيير اللغة:</strong></p>
+        <button onclick="switchLanguage('id')">اللغة الإندونيسية</button>
+        <button onclick="switchLanguage('en')">الإنجليزية</button>
+        <button onclick="switchLanguage('ar')">العربية</button>
+    </div>
+
+    <!-- Language Settings Button -->
+    <button class="language-settings-button" onclick="toggleLanguageSettings()">إعدادات اللغة</button>
+
+    <!-- Language Settings Modal -->
+    <div class="language-settings" id="language-settings">
+        <h3>إعدادات اللغة</h3>
+        <p>يرجى اختيار اللغة المفضلة:</p>
+        <button onclick="switchLanguage('id')">اللغة الإندونيسية</button>
+        <button onclick="switchLanguage('en')">الإنجليزية</button>
+        <button onclick="switchLanguage('ar')">العربية</button>
+        <br><br>
+        <button onclick="toggleLanguageSettings()">إغلاق</button>
+    </div>
+
+    <footer>
+        <p>© 2025 PT.CEYSIA PFP. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- Slick Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script>
+        const translations = {
+            id: {
+                title: "PT.CEYSIA PFP",
+                subtitle: "Solusi Terbaik untuk Kebutuhan Anda",
+                aboutLink: "Tentang Kami",
+                productsLink: "Produk Kami",
+                contactLink: "Hubungi Kami",
+                welcomeTitle: "Selamat Datang di PT.CEYSIA PFP",
+                welcomeText: "Kami berkomitmen untuk menghadirkan produk hasil alam Indonesia yang berkualitas tinggi ke dunia."
+            },
+            en: {
+                title: "PT.CEYSIA PFP",
+                subtitle: "The Best Solution for Your Needs",
+                aboutLink: "About Us",
+                productsLink: "Our Products",
+                contactLink: "Contact Us",
+                welcomeTitle: "Welcome to PT.CEYSIA PFP",
+                welcomeText: "We are committed to delivering high-quality natural products from Indonesia's fertile land to the world."
+            },
+            ar: {
+                title: "PT.CEYSIA PFP",
+                subtitle: "أفضل حل لاحتياجاتك",
+                aboutLink: "معلومات عنا",
+                productsLink: "منتجاتنا",
+                contactLink: "اتصل بنا",
+                welcomeTitle: "مرحبًا بكم في PT.CEYSIA PFP",
+                welcomeText: "نحن ملتزمون بتقديم منتجات طبيعية عالية الجودة من الأراضي الخصبة في إندونيسيا إلى العالم."
+            }
+        };
+
+        function switchLanguage(lang) {
+            // Update the localStorage with selected language
+            localStorage.setItem('language', lang);
+
+            // Update the page with the selected language
+            document.getElementById('title').textContent = translations[lang].title;
+            document.getElementById('subtitle').textContent = translations[lang].subtitle;
+            document.getElementById('about-link').textContent = translations[lang].aboutLink;
+            document.getElementById('products-link').textContent = translations[lang].productsLink;
+            document.getElementById('contact-link').textContent = translations[lang].contactLink;
+            document.getElementById('welcome-title').textContent = translations[lang].welcomeTitle;
+            document.getElementById('welcome-text').textContent = translations[lang].welcomeText;
+        }
+
+        function toggleLanguageSettings() {
+            const settings = document.getElementById('language-settings');
+            settings.style.display = settings.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Check for saved language in localStorage and apply it
+        function loadLanguage() {
+            const savedLanguage = localStorage.getItem('language') || 'ar'; // Default to 'ar' (Arabic) if no language is saved
+            switchLanguage(savedLanguage);
+        }
+
+        // Initialize Slick Carousel
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true,
+                dots: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+
+            // Load saved language when the page loads
+            loadLanguage();
+        });
+    </script>
+
+</body>
+</html>

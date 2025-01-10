@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Produk Kami - Menyediakan berbagai jenis rempah-rempah, biji-bijian, dan kelapa berkualitas tinggi untuk pasar internasional.">
+    <title>Produk Kami</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f8f9fa;
+            color: #333;
+            direction: ltr; /* Mengubah arah teks ke kiri ke kanan */
+            text-align: left; /* Menyelaraskan teks ke kiri */
+        }
+        header {
+            background: linear-gradient(90deg, #28a745, #218838);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-weight: 600;
+        }
+        nav {
+            background-color: #343a40;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: 500;
+            background-color: #28a745;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #218838;
+        }
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .language-selector select {
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        .language-selector select:hover {
+            background-color: #218838;
+        }
+        .language-selector select:focus {
+            outline: none;
+        }
+        .language-info {
+            font-size: 12px;
+            color: white;
+            margin-left: 10px;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section p {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #555;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            font-size: 20px;
+            color: #28a745;
+            margin: 20px 0 10px;
+        }
+        .product-card p {
+            font-size: 14px;
+            color: #666;
+            padding: 0 15px;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+            font-size: 14px;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+            nav a {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+            .product-card img {
+                height: 180px;
+            }
+            .product-card h3 {
+                font-size: 18px;
+            }
+            .product-card p {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .language-selector {
+                top: 10px;
+                right: 10px;
+                font-size: 12px;
+            }
+            .product-card {
+                font-size: 12px;
+            }
+            section p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Produk Kami</h1>
+    </header>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <select onchange="window.location.href=this.value;">
+            <option value="products.html" selected>Bahasa Indonesia</option>
+            <option value="products-en.html">English</option>
+            <option value="products-ar.html">العربية</option>
+        </select>
+        <span class="language-info">Pilih bahasa</span>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="contact.html">Hubungi Kami</a>
+    </nav>
+
+    <section>
+        <p>Produk-produk kami adalah pilihan terbaik dalam kategori rempah-rempah, biji-bijian, dan kelapa. Berikut adalah beberapa produk unggulan yang kami tawarkan:</p>
+        
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="lada.jpg" alt="Lada">
+                <h3>Lada</h3>
+                <p>Rempah yang memberikan cita rasa pedas khas, cocok untuk berbagai masakan.</p>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="kunyit.jpg" alt="Kunyit">
+                <h3>Kunyit</h3>
+                <p>Rempah yang dikenal dengan warna kuning cerah dan banyak manfaat kesehatan.</p>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="jahe.jpg" alt="Jahe">
+                <h3>Jahe</h3>
+                <p>Rempah yang terkenal dengan rasa pedas dan hangat, bermanfaat untuk kesehatan tubuh.</p>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="minyak kelapa.jpg" alt="Minyak Kelapa">
+                <h3>Minyak Kelapa</h3>
+                <p>Minyak sehat yang dapat digunakan untuk berbagai keperluan masakan dan kecantikan.</p>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="santan kelapa.jpg" alt="Santan Kelapa">
+                <h3>Santan Kelapa</h3>
+                <p>Santan kelapa yang lezat dan kaya gizi, cocok untuk masakan tradisional.</p>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="kacang tanah.jpg" alt="Kacang Tanah">
+                <h3>Kacang Tanah</h3>
+                <p>Biji-bijian kaya protein yang bisa digunakan dalam berbagai makanan.</p>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="wijen.jpg" alt="Wijen">
+                <h3>Wijen</h3>
+                <p>Biji-bijian yang sering digunakan dalam berbagai masakan dan memiliki banyak manfaat.</p>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="kelapa parut.jpg" alt="Kelapa Parut">
+                <h3>Kelapa Parut</h3>
+                <p>Kelapa yang diparut dan siap digunakan untuk berbagai hidangan lezat.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Perusahaan Kami. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>

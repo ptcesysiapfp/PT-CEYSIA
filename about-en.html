@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Us - Company profile, vision, and mission in supplying high-quality spices, seeds, and coconut for the international market.">
+    <title>About Us</title>
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1e90ff, #00bcd4);
+            color: white;
+        }
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #002b36;
+            text-align: center;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            background-color: #008cba;
+            padding: 12px 25px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #00bcd4;
+        }
+        section {
+            padding: 20px;
+            margin: auto;
+            max-width: 1200px;
+        }
+        .carousel {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .carousel img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #ffd700;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #002b36;
+            color: white;
+            font-size: 14px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .language-selector select {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #00bcd4;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .language-selector select:hover {
+            background-color: #1e90ff;
+        }
+        .language-selector label {
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            section {
+                padding: 15px;
+            }
+            nav a {
+                padding: 10px 18px;
+                margin: 3px;
+            }
+            .language-selector {
+                top: 10px;
+                right: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            nav a {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
+            footer {
+                font-size: 12px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <!-- Language Selector with Description -->
+    <div class="language-selector">
+        <label for="language">Select Language: </label>
+        <select id="language" onchange="window.location.href=this.value;">
+            <option value="about.html">Bahasa Indonesia</option>
+            <option value="about-en.html" selected>English</option>
+        </select>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Our Products</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <section>
+        <!-- Carousel Slider -->
+        <div class="carousel">
+            <div><img src="08.jpg" alt="About Us 1"></div>
+            <div><img src="07.jpeg" alt="About Us 2"></div>
+            <div><img src="006.jpg" alt="About Us 3"></div>
+        </div>
+
+        <p>
+            We are a company focused on exporting high-quality spices, seeds, and coconuts. Our products are produced to the highest standards, and we are committed to bringing the flavors, health, and natural wealth of Indonesia to the global market.
+        </p>
+        <h2>Vision</h2>
+        <p>
+            To be a leader in supplying high-quality spices, seeds, and coconuts for the international market, while introducing the natural wealth of Indonesia to the world.
+        </p>
+        <h2>Mission</h2>
+        <p>
+            1. Provide superior, natural, and environmentally friendly products.<br>
+            2. Raise global awareness of the benefits of spices, seeds, and coconuts.<br>
+            3. Build strong relationships with international partners and contribute to global economic development.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Our Company. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Include jQuery and Slick Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+        // Initialize Slick Carousel
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true,
+                dots: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+    </script>
+</body>
+</html>

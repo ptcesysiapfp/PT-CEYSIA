@@ -1,0 +1,57 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+header {
+    background-color: hsl(184, 39%, 49%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    text-align: center;
+    background: #333;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #575757;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
